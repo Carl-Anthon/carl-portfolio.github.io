@@ -24,6 +24,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
+  <div class="certificate-modal" id="certificateModal">
+  <div class="certificate-modal-content">
+
+    <button class="close-modal">&times;</button>
+
+    <img id="modalImage" src="" alt="Certificate">
+
+    <a id="downloadBtn" href="" download class="download-btn">
+      Download
+    </a>
+
+  </div>
+</div>
+
 <body>
 
   <!--
@@ -769,95 +783,36 @@
         </header>
 
         <section class="framework-posts">
-<!--
-          <ul class="framework-posts-list">
 
-            <li class="framework-post-item">
-              <a href="https://angular.dev/" target="_blank" rel="noopener noreferrer">
+  <div class="certificate-card">
+    <div class="certificate-thumb">
+      <img src="./assets/images/cert1.jpg" alt="ISACA Certificate">
+      <div class="certificate-icon-box"><ion-icon name="ribbon-outline"></ion-icon></div>
+    </div>
+    <div class="certificate-content">
+      <h3 class="certificate-title">The Digital Foundation</h3>
+      <p class="certificate-org">USLS ISACA Student Group</p>
+      <span class="certificate-date">Nov 8, 2025</span>
+      <p class="certificate-desc">Participation in the conference on Governance and Trust.</p>
+      <button class="certificate-view-btn" data-cert="cert1">View</button>
+    </div>
+  </div>
 
-                <figure class="framework-banner-box">
-                  <img src="./assets/images/angular.png">
-                </figure>
+  <div class="certificate-card">
+    <div class="certificate-thumb">
+      <img src="./assets/images/cert2.png" alt="Certificate 2">
+      <div class="certificate-icon-box"><ion-icon name="shield-checkmark-outline"></ion-icon></div>
+    </div>
+    <div class="certificate-content">
+      <h3 class="certificate-title">DevFest Bacolod 2025</h3>
+      <p class="certificate-org">Google Developer Groups</p>
+      <span class="certificate-date">Nov 22, 2025</span>
+      <p class="certificate-desc">Certificate of Attendance for the annual developer festival held at USLS.</p>
+      <button class="certificate-view-btn" data-cert="cert2">View</button>
+    </div>
+  </div>
 
-                <div class="framework-content">
 
-                  <div class="framework-meta">
-                    <p class="framework-category">Angular</p>
-
-                    <span class="dot"></span>
-
-                  </div>
-
-                  <h3 class="h3 framework-item-title">Start using Angular in 2025</h3>
-
-                  <p class="framework-text">
-                    I have basic knowledge of Angular, a powerful framework for building
-                    dynamic and responsive web applications.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="framework-post-item">
-              <a href="https://laravel.com/" target="_blank" rel="noopener noreferrer">
-
-                <figure class="framework-banner-box">
-                  <img src="./assets/images/laravel.png">
-                </figure>
-
-                <div class="framework-content">
-
-                  <div class="framework-meta">
-                    <p class="framework-category">LARAVEL</p>
-
-                    <span class="dot"></span>
-
-                  </div>
-
-                  <h3 class="h3 framework-item-title">Start using laravel in 2024</h3>
-
-                  <p class="framework-text">
-                    I have basic knowledge of Laravel, a PHP framework that helps develop websites and web 
-                    applications efficiently and with cleaner code.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="framework-post-item">
-              <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">
-
-                <figure class="framework-banner-box">
-                  <img src="./assets/images/tailwindcss.jpg">
-                </figure>
-
-                <div class="framework-content">
-
-                  <div class="framework-meta">
-                    <p class="framework-category">TAILWIND CSS</p>
-
-                    <span class="dot"></span>
-
-                  </div>
-
-                  <h3 class="h3 framework-item-title">Start using Tailwind in 2026</h3>
-
-                  <p class="framework-text">
-                    I have basic knowledge of Tailwind CSS, a popular utility-first CSS framework used 
-                    to create modern, responsive websites efficiently.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
--->
         </section>
 
       </article>

@@ -156,3 +156,49 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+/* ===============================
+   CERTIFICATE MODAL SCRIPT
+================================ */
+
+const certModal = document.getElementById("certificateModal");
+const certModalImg = document.getElementById("modalImage");
+const certDownloadBtn = document.getElementById("downloadBtn");
+const certCloseBtn = document.querySelector(".close-modal");
+
+// Open modal
+document.querySelectorAll(".certificate-view-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const card = btn.closest('.certificate-card');
+    const img = card ? card.querySelector('.certificate-thumb img') : null;
+    const imageSrc = img ? img.src : './assets/images/cert1.jpg';
+
+    certModalImg.src = imageSrc;
+    certDownloadBtn.href = imageSrc;
+
+    certModal.classList.add("active");
+  });
+});
+
+document.querySelectorAll(".certificate-view-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const card = btn.closest('.certificate-card');
+    const img = card ? card.querySelector('.certificate-thumb img') : null;
+    const imageSrc = img ? img.src : './assets/images/cert2.png';
+
+    certModalImg.src = imageSrc;
+    certDownloadBtn.href = imageSrc;
+
+    certModal.classList.add("active");
+  });
+});
+// Close modal
+certCloseBtn.addEventListener("click", () => {
+  certModal.classList.remove("active");
+});
+
+// Close modal when clicking outside
+certModal.addEventListener("click", (e) => {
+  if (e.target === certModal) {
+    certModal.classList.remove("active");
+  }
+});
